@@ -1,0 +1,6 @@
+<h1>Your Cart</h1>
+<ul>
+    {% for product, quantity in cart_items %}
+    <li>{{ product.name }} (x{{ quantity }}) - ${{ product.price * quantity }}</li>
+    {% endfor %}
+</ul>
